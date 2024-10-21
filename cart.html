@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <div id="cart-items"></div>
+    <script src="cart.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Cart</h1>
+        <div id="cart-items" class="cart-items"></div>
+        <div id="total-price" class="total-price"></div>
+    </div>
+     <!-- Checkout Button -->
+        <button id="checkout-button" class="checkout-btn">Proceed to Checkout</button>
+    </div>
+    <script src="cart.js"></script>
+    <script>
+        // Add functionality to the checkout button
+        document.getElementById('checkout-button').addEventListener('click', () => {
+            window.location.href = 'checkout.html'; // Redirect to checkout page
+        });
+    </script>
+    
+</body>
+</html>
